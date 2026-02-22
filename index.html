@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAB Tour & Travel - Perjalanan Nyaman & Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0a0a0a;
+        }
+
+        .glass-effect {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glow-pink {
+            box-shadow: 0 0 25px rgba(157, 23, 77, 0.4);
+        }
+
+        .glow-gold {
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.3);
+        }
+
+        .gradient-pink-dark {
+            background: linear-gradient(135deg, #881337 0%, #4c0519 100%);
+        }
+
+        .text-shadow-glow {
+            text-shadow: 0 0 20px rgba(157, 23, 77, 0.5);
+        }
+
+        .border-gradient {
+            border-image: linear-gradient(135deg, #881337, #eab308) 1;
+        }
+
+        .hover-gold-border:hover {
+            border-color: #eab308;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-gray-100">
+
+    <header class="fixed w-full z-50 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <a href="#home" class="flex items-center group">
+                    <img src="assets/sab-removebg-preview_Nero_AI_Image_Upscaler_Photo_Face-removebg-preview.png"
+                        alt="SAB Tour Logo"
+                        class="h-12 w-auto mr-2 group-hover:scale-110 transition-transform duration-300">
+                    <div class="text-2xl font-bold">
+                        <span class="text-pink-700">SAB</span> <span class="text-white-600">Tour</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-pink-600 transition">Beranda</a>
+                <a href="#armada" class="hover:text-pink-600 transition">Armada</a>
+                <a href="#Crew" class="hover:text-pink-600 transition">Crew</a>
+                <a href="#about" class="hover:text-pink-600 transition">About Us</a>
+                <a href="#contact"
+                    class="px-4 py-2 gradient-pink-dark text-white rounded-lg hover:opacity-90 transition glow-pink">Hubungi
+                    Kami</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-2xl text-pink-600">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-gray-800 px-6 py-4 space-y-4">
+            <a href="#home" class="block hover:text-pink-600">Beranda</a>
+            <a href="#armada" class="block hover:text-pink-600">Armada</a>
+            <a href="#Crew" class="block hover:text-pink-600">Crew</a>
+            <a href="#about" class="block hover:text-pink-600">About Us</a>
+            <a href="#contact" class="block text-pink-600 font-bold">Hubungi Kami</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center"
+        style="background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)), url('assets/bromo.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-950/20 via-transparent to-black/40"></div>
+        <div class="text-center text-white px-4 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-shadow-glow">
+                Jelajahi Keindahan Indonesia <br>
+                <span class="bg-gradient-to-r from-pink-600 via-pink-700 to-pink-800 bg-clip-text text-transparent">
+                    Bersama SAB Tour & Travel
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-300">Kami menyediakan layanan transportasi
+                terbaik dengan
+                Crew berpengalaman untuk memastikan perjalanan Anda aman dan tak terlupakan.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#armada"
+                    class="gradient-pink-dark hover:opacity-90 text-white px-8 py-3 rounded-full font-semibold transition glow-pink">Lihat
+                    Armada</a>
+                <a href="https://wa.me/6282233454580"
+                    class="gradient-pink-dark border-2 border-white-600 hover:border-yellow-400 hover:shadow-lg hover:shadow-yellow-600/50 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300">
+                    <i class="fab fa-whatsapp mr-2"></i>Pesan via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="armada" class="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">Pilihan
+                        Armada Kami</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 mx-auto glow-gold">
+                </div>
+                <p class="mt-4 text-gray-400">Berbagai pilihan kendaraan yang selalu bersih, terawat, dan nyaman.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="glass-effect rounded-2xl overflow-hidden border border-gray-800 hover-gold-border transition-all duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/InnovaReborn.avif" alt="Innova Reborn"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-pink-950/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">Innova Reborn</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Ideal untuk rombongan besar, ziarah, atau study tour.</p>
+                        <div class="flex items-center font-semibold">
+                            <i class="fas fa-users mr-2 text-yellow-600"></i>
+                            <span class="text-gray-300">Kapasitas: 7 Kursi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-effect rounded-2xl overflow-hidden border border-gray-800 hover-gold-border transition-all duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/hiace.jpg" alt="Toyota Hiace"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-pink-950/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">Toyota Hiace</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Kabin luas dengan suspensi empuk untuk perjalanan jauh.
+                        </p>
+                        <div class="flex items-center font-semibold">
+                            <i class="fas fa-users mr-2 text-yellow-600"></i>
+                            <span class="text-gray-300">Kapasitas: 14 Kursi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-effect rounded-2xl overflow-hidden border border-gray-800 hover-gold-border transition-all duration-300 group">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/avanza2.png" alt="Avanza"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/90 via-pink-950/30 to-transparent opacity-60 group-hover:opacity-80 transition-opacity">
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-pink-600">Avanza</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Hemat dan lincah, sangat cocok untuk keluarga kecil.</p>
+                        <div class="flex items-center font-semibold">
+                            <i class="fas fa-users mr-2 text-yellow-600"></i>
+                            <span class="text-gray-300">Kapasitas: 6 Kursi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Crew" class="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span class="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">Our Best
+                        Crew</span>
+                </h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 mx-auto glow-gold">
+                </div>
+                <p class="text-gray-400 mt-4">Partner perjalanan Anda yang ramah, profesional, dan paham rute nusantara.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div
+                    class="flex flex-col md:flex-row items-center glass-effect p-6 rounded-2xl border border-gray-800 hover-gold-border transition-all">
+                    <img src="assets/omAden.JPG" alt="Crew 1"
+                        class="w-24 h-24 rounded-full object-cover border-4 border-pink-800 mb-4 md:mb-0 md:mr-6 hover:border-yellow-600 transition-colors">
+                    <div>
+                        <h4 class="text-xl font-bold text-pink-600">Aden Nugroho</h4>
+                        <p class="text-yellow-600 text-sm mb-2 flex items-center">
+                            <i class="fas fa-star mr-1 text-xs"></i>
+                            Trained and diligent
+                        </p>
+                        <p class="text-gray-400 text-sm italic">"Rekomendasi kuliner Malang dan sekitarnya, sudah
+                            menjadi tugas saya untuk membimbing wisatawan"</p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row items-center glass-effect p-6 rounded-2xl border border-gray-800 hover-gold-border transition-all">
+                    <img src="assets/babeh.png" alt="Crew 2"
+                        class="w-24 h-24 rounded-full object-cover border-4 border-pink-800 mb-4 md:mb-0 md:mr-6 hover:border-yellow-600 transition-colors">
+                    <div>
+                        <h4 class="text-xl font-bold text-pink-600">Hendra Prasetya</h4>
+                        <p class="text-yellow-600 text-sm mb-2 flex items-center">
+                            <i class="fas fa-star mr-1 text-xs"></i>
+                            Pengalaman 8 Tahun
+                        </p>
+                        <p class="text-gray-400 text-sm italic">"Ramah dan siap memberikan rekomendasi kuliner terbaik
+                            di perjalanan."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Family Business" class="rounded-3xl shadow-2xl border border-gray-800">
+                    <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-pink-950/30 to-transparent"></div>
+                </div>
+            </div>
+            <div class="md:w-1/2 md:pl-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">Tentang SAB
+                        Tour & Travel</span>
+                </h2>
+                <p class="text-gray-400 leading-relaxed mb-6">SAB Tour & Travel berawal dari bisnis keluarga yang
+                    didasari atas kecintaan kami pada dunia pariwisata. Kami memahami bahwa perjalanan bukan sekadar
+                    berpindah tempat, tapi tentang menciptakan kenangan.</p>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-start glass-effect p-4 rounded-lg border border-gray-800 hover-gold-border transition-all">
+                        <div class="gradient-pink-dark p-3 rounded-lg text-white mr-4">
+                            <i class="fas fa-check text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-pink-600">Kepercayaan Keluarga</h5>
+                            <p class="text-sm text-gray-400">Kami menjaga amanah setiap pelanggan seperti keluarga
+                                sendiri.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-start glass-effect p-4 rounded-lg border border-gray-800 hover-gold-border transition-all">
+                        <div class="gradient-pink-dark p-3 rounded-lg text-white mr-4">
+                            <i class="fas fa-heart text-yellow-500"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-pink-600">Kenyamanan Maksimal</h5>
+                            <p class="text-sm text-gray-400">Unit armada terbaru dan servis rutin berkala.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="glass-effect rounded-3xl overflow-hidden flex flex-col md:flex-row border border-gray-800">
+                <div class="gradient-pink-dark p-10 md:w-1/3 text-white border-r border-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-yellow-500"></i>
+                        Hubungi Kami
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center hover:text-yellow-400 transition group">
+                            <i
+                                class="fas fa-phone-alt mr-4 text-xl text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                            <span>+62 822 3345 4580</span>
+                        </div>
+                        <div class="flex items-center hover:text-yellow-400 transition group">
+                            <i
+                                class="fas fa-envelope mr-4 text-xl text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                            <span>hendrapras@gmail.com</span>
+                        </div>
+                        <div class="flex items-center hover:text-yellow-400 transition group">
+                            <i
+                                class="fas fa-map-marker-alt mr-4 text-xl text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                            <span>Jl. Sigura-gura III No.35, Sumbersari</span>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <a href="https://www.instagram.com/sabtourandtravel" target="_blank"
+                            class="w-10 h-10 bg-pink-900 rounded-full flex items-center justify-center hover:bg-yellow-600 transition glow-gold"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="p-10 md:w-2/3 bg-gradient-to-br from-gray-900 to-black">
+                    <form id="whatsappForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Nama Lengkap</label>
+                                <input type="text" id="name" placeholder="Masukkan Nama Anda"
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700 focus:border-yellow-600 text-white placeholder-gray-500 transition"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-gray-300">Nomor WhatsApp
+                                    Anda</label>
+                                <input type="text" id="phone" placeholder="Contoh: 0812..."
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700 focus:border-yellow-600 text-white placeholder-gray-500 transition"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2 text-gray-300">Tujuan / Jenis Armada</label>
+                            <select id="fleet"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700 focus:border-yellow-600 text-white transition">
+                                <option value="Innova Reborn">Innova Reborn</option>
+                                <option value="Hiace">Hiace</option>
+                                <option value="Avanza">Avanza</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-sm font-semibold mb-2 text-gray-300">Pesan Tambahan</label>
+                            <textarea id="message" rows="4" placeholder="Detail perjalanan Anda..."
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-700 focus:border-yellow-600 text-white placeholder-gray-500 transition"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full gradient-pink-dark text-white font-bold py-3 rounded-lg hover:opacity-90 transition glow-pink">
+                            <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-bold mb-4">
+                <span class="text-pink-700">SAB</span> <span class="text-yellow-600">Tour & Travel</span>
+            </div>
+            <p class="text-gray-500 mb-8 max-w-md mx-auto">Solusi transportasi terbaik untuk kebutuhan liburan, bisnis,
+                dan acara keluarga Anda.</p>
+            <div
+                class="w-32 h-px bg-gradient-to-r from-transparent via-yellow-600 to-transparent mx-auto mb-8 glow-gold">
+            </div>
+            <p class="text-sm text-gray-600">&copy; 2024 SAB Tour & Travel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282233454580" target="_blank"
+        class="fixed bottom-6 right-6 bg-gradient-to-r from-green-700 to-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:from-green-600 hover:to-green-700 transition z-50 text-2xl hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // 1. Mobile Menu Toggle Logic
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // 2. WhatsApp Form Handling Logic
+        const whatsappForm = document.getElementById('whatsappForm');
+
+        whatsappForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phoneUser = document.getElementById('phone').value;
+            const fleet = document.getElementById('fleet').value;
+            const message = document.getElementById('message').value;
+
+            const adminNumber = "6282233454580";
+
+            const text = `Halo Admin SAB Tour!%0A%0A` +
+                `Saya ingin memesan layanan dengan detail berikut:%0A` +
+                `------------------------------------------%0A` +
+                `*Nama:* ${name}%0A` +
+                `*WA:* ${phoneUser}%0A` +
+                `*Armada:* ${fleet}%0A` +
+                `*Pesan:* ${message}%0A` +
+                `------------------------------------------%0A` +
+                `Mohon info ketersediaan dan harganya. Terima kasih!`;
+
+            const waUrl = `https://api.whatsapp.com/send?phone=${adminNumber}&text=${text}`;
+
+            window.open(waUrl, '_blank');
+
+            whatsappForm.reset();
+        });
+    </script>
+</body>
+
+</html>
